@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# OfferingTree Calendly Clone
+
+Thank you for the opportunity to work on this project. Below is an overview of the implementation, key highlights, and potential improvements.
+
+## Key Highlights
+
+- **Robust Architecture**: The project is well-structured, with a clear separation between views and controllers.
+- **API Calls**: Leveraged API calls instead of relying solely on the mock data.
+- **Service Integration**: Introduced a service layer to instantiate the API for better scalability.
+- **Multi-User Support**:  
+  - Supports multiple user profiles for easy addition of new users.  
+  - Example: Access the system for **Arvind Menon** via `http://localhost:3000/arvind` or **Lucas Freitas** via `http://localhost:3000/lucas`.  
+  - To add a new user, simply update the `people` object in the `data` folder.
+- **Clean Architecture**: The project is designed to be easily interpretable and maintainable.
+
+## Potential Improvements
+
+1. **Testing**:  
+   - Add unit tests.  
+   - Introduce mutation testing.  
+   - Implement Cypress for end-to-end testing.  
+2. **Performance Optimization**:  
+   - Use `useCallback` for functions to avoid unnecessary re-creations.  
+3. **Responsiveness**:  
+   - Enhance the design to support responsiveness, as the site currently works only in a web version.  
+4. **Timezone Support**:  
+   - Improve the implementation to handle and adapt to any timezone dynamically, allowing users from different regions to have an accurate scheduling experience.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- A code editor (e.g., VS Code)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/LucasFreitas7/OfferingTreeCalendly.git
+   ```
+2. Navigate to the project directory:  
+   ```bash
+   cd OfferingTreeCalendly
+   ```
+3. Install dependencies:  
+   ```bash
+   npm install
+   ```
+4. Start the development server:  
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Feedback
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I’m open to any feedback or suggestions. Please feel free to reach out with questions or requests for further adjustments.
